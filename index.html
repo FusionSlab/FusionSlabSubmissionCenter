@@ -784,16 +784,16 @@ function buildFields(){
   const tcgGroup = ["Pokemon","Amiibo","Digimon","Dragon Ball","Garbage Pail Cards","Lorcana","One Piece","Magic: The Gathering"];
 
   if(tcgGroup.includes(selectedCardType)){
-    fields = ["Year","Set","Character/Card Name","Card Number","Rarity","Finish/Edition"];
+    fields = ["Year","Set","Character/Card Name","Card Number","Finish/Edition"];
   }
   else if(selectedCardType === "Sports"){
     fields = ["Sport","Year","Set","Player","Team","Card #","Variant"];
   }
   else if(["Marvel","Star Wars"].includes(selectedCardType)){
-    fields = ["Year","Set","Character/Scene","Card Number","Rarity"];
+    fields = ["Year","Set","Character/Scene","Card Number"];
   }
   else if(selectedCardType === "YuGiOh"){
-    fields = ["Year","Set","Card Name","Card #","Rarity","Edition"];
+    fields = ["Year","Set","Card Name","Card #","Edition"];
   }
   else if(selectedCardType === "Custom"){
     fields = [
